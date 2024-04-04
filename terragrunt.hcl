@@ -12,3 +12,7 @@ remote_state {
     path = "${dependency.tfstate.outputs.prefix}-${path_relative_to_include()}.tfstate"
   }
 }
+
+locals {
+  common = {}
+}
